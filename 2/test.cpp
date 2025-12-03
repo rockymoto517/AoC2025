@@ -49,11 +49,13 @@ void check_str(const std::string &check) {
 }
 
 int main() {
+    /* Should Pass */
     check_str("884884884");
     check_str("111111111");
     check_str("2121212121");
     check_str("123412341234");
     check_str("1234512345");
+    /* Should Fail */
     check_str("2121212118");
     check_str("123452345");
 }
